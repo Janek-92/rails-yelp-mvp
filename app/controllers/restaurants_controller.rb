@@ -15,5 +15,4 @@ class RestaurantsController < ApplicationController
     @restaurant = Restaurant.new(params[:restaurant])
     @restaurant.save
   end
-
 end

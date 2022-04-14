@@ -3,7 +3,7 @@ class CreateReviews < ActiveRecord::Migration[6.1]
     create_table :reviews do |t|
       t.integer :rating
       t.string :content
-      t.string :string
+      t.references :restaurant, foreign_key: true
 
       t.timestamps
     end
